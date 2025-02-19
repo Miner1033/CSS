@@ -1,0 +1,109 @@
+<!DOCTYPE html> <!-- Defines the document type as HTML5 -->
+<html lang="en"> <!-- Opens the HTML document and sets the language to English -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 for better compatibility -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsiveness for mobile devices -->
+    <title>Styled Web Page</title> <!-- Sets the title of the webpage -->
+
+    <style>
+        /* Styling the entire body of the webpage */
+        body {
+            font-family: Arial, sans-serif; /* Sets the font */
+            background-color: #f4f4f4; /* Sets background color */
+            margin: 0; /* Removes default margin */
+            padding: 0; /* Removes default padding */
+        }
+
+        /* Styling the navigation bar */
+        nav {
+            background-color: #333; /* Dark background for the navbar */
+            padding: 15px; /* Adds padding inside the navbar */
+            text-align: center; /* Centers the navigation links */
+        }
+
+        /* Styling the navigation bar links */
+        nav a {
+            color: white; /* Sets text color to white */
+            text-decoration: none; /* Removes underline from links */
+            margin: 20px; /* Adds space between links */
+            font-size: 18px; /* Sets font size */
+            padding: 10px; /* Adds padding around links */
+        }
+
+        /* Hover effect for navigation links */
+        nav a:hover {
+            background-color: gray; /* Changes background color on hover */
+            border-radius: 5px; /* Rounds the corners on hover */
+        }
+
+        /* Styling the main container */
+        .container {
+            display: flex; /* Uses flexbox for alignment */
+            justify-content: center; /* Centers the content horizontally */
+            margin-top: 30px; /* Adds space at the top */
+        }
+
+        /* Styling the card box */
+        .card {
+            width: 300px; /* Sets card width */
+            padding: 20px; /* Adds padding inside the card */
+            border-radius: 10px; /* Rounds the corners */
+            box-shadow: 2px 2px 10px gray; /* Adds a shadow effect */
+            background-color: white; /* Sets background color */
+            text-align: center; /* Centers text inside the card */
+        }
+
+        /* Styling the image inside the card */
+        .card img {
+            width: 100%; /* Makes image take full width of the card */
+            border-radius: 10px; /* Rounds the image corners */
+        }
+
+        /* Styling the heading inside the card */
+        .card h2 {
+            color: blue; /* Sets heading text color */
+        }
+
+        /* Styling the button */
+        .btn {
+            display: inline-block; /* Makes button an inline element */
+            margin-top: 15px; /* Adds space above the button */
+            padding: 10px 20px; /* Adds padding inside the button */
+            background-color: green; /* Sets background color */
+            color: white; /* Sets text color */
+            border: none; /* Removes button border */
+            cursor: pointer; /* Changes cursor to pointer on hover */
+            transition: 0.3s; /* Adds smooth transition effect */
+        }
+
+        /* Hover effect for the button */
+        .btn:hover {
+            background-color: darkgreen; /* Darkens the button on hover */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <nav>
+        <a href="#">Home</a> <!-- Link to Home -->
+        <a href="#">About</a> <!-- Link to About -->
+        <a href="#">Services</a> <!-- Link to Services -->
+        <a href="#">Contact</a> <!-- Link to Contact -->
+    </nav>
+
+    <!-- Main container that holds the card -->
+    <div class="container">
+        <div class="card"> <!-- Card structure -->
+            <img src="https://via.placeholder.com/300" alt="Image"> <!-- Placeholder image -->
+            <h2>Card Title</h2> <!-- Card heading -->
+            <p>This is a sample card with an image, title, and button.</p> <!-- Description inside the card -->
+            <button class="btn">Read More</button> <!-- Styled button inside the card -->
+        </div>
+    </div>
+
+</body>
+
+</html> <!-- Closes the HTML document -->
